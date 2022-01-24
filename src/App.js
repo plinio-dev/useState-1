@@ -2,14 +2,14 @@ import "./App.css";
 import React, { useState } from "react";
 
 function App() {
-  const [count, seCount] = useState(4);
+  const [count, setCount] = useState(4);
 
   function decremntCount() {
-    seCount((prevCount) => prevCount - 1);
+    setCount((prevCount) => prevCount - 1);
   }
 
   function incrementCount() {
-    seCount((prevCount) => prevCount + 1);
+    setCount((prevCount) => prevCount + 1);
   }
 
   return (
